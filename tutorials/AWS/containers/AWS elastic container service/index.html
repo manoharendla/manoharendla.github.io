@@ -382,9 +382,95 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          AWS elastic container services
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         AWS elastic container services
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#elastic-container-services-has-two-launch-types" class="md-nav__link">
+    Elastic container services has two launch types:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#differences-between-ec2-launch-type-and-fargate" class="md-nav__link">
+    Differences between EC2 launch type and Fargate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ecs-components" class="md-nav__link">
+    ECS Components
+  </a>
+  
+    <nav class="md-nav" aria-label="ECS Components">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ecs-task-definition-file" class="md-nav__link">
+    ECS Task Definition File
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecs-task" class="md-nav__link">
+    ECS Task
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecs-service" class="md-nav__link">
+    ECS Service
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load-balancer" class="md-nav__link">
+    Load Balancer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launching-a-nodejs-container-from-docker-hub-in-the-ecs-fargate" class="md-nav__link">
+    Launching a nodejs container from docker hub in the ECS Fargate
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -477,6 +563,79 @@
 
 
 <h1 id="aws-elastic-container-services">AWS elastic container services</h1>
+<h2 id="elastic-container-services-has-two-launch-types">Elastic container services has two launch types:</h2>
+<ul>
+<li>EC2</li>
+<li>Fargate</li>
+</ul>
+<h2 id="differences-between-ec2-launch-type-and-fargate">Differences between EC2 launch type and Fargate</h2>
+<table>
+<thead>
+<tr>
+<th>EC2</th>
+<th>Faragate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Underlying Infratucture will be managed by us</td>
+<td>Underlying infrastructure will be managed by AWS</td>
+</tr>
+<tr>
+<td>Need to sping up servers and install docker</td>
+<td>Follows serverless architecture, instances are readily available with everything installed</td>
+</tr>
+<tr>
+<td>ECS agent needs to be installed to communicate with the control plane</td>
+<td>not required as the cluster is managed by ECS</td>
+</tr>
+<tr>
+<td>Pay for EC2 instances</td>
+<td>Pay only for what we use</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ecs-components">ECS Components</h2>
+<h3 id="ecs-task-definition-file">ECS Task Definition File</h3>
+<ul>
+<li>Its a blueprint describing how a container should launch</li>
+<li>Its similar to docker compose file</li>
+<li>CPU and memory definitions can be defined inside the task defintion file</li>
+<li>Image/ports/volume details will be defined in this file</li>
+</ul>
+<h3 id="ecs-task">ECS Task</h3>
+<ul>
+<li>Its an instance of Task Definition file</li>
+<li>Its a running container</li>
+</ul>
+<h3 id="ecs-service">ECS Service</h3>
+<ul>
+<li>A service ensures certain number of tasks(replicas) are running at all the times</li>
+</ul>
+<h3 id="load-balancer">Load Balancer</h3>
+<ul>
+<li>A load balancer can be assigned to route external traffic to your containers</li>
+</ul>
+<h2 id="launching-a-nodejs-container-from-docker-hub-in-the-ecs-fargate">Launching a nodejs container from docker hub in the ECS Fargate</h2>
+<ol>
+<li>Logon to AWS management console and search for ECS
+    <img alt="ECS page" src="../images/ecs.PNG" /></li>
+<li>Select ECS, click on GetStarted and select configure for custom docker image from docker hub
+    <img alt="Container form" src="../images/nginx-1.PNG" />
+    <img alt="Container form" src="../images/nginx-2.PNG" /></li>
+<li>Leave task definition to defaults
+    <img alt="Task Definition" src="../images/def.PNG" /></li>
+<li>Define the service, leave to default for now. You can modify the number of running instances required here
+    <img alt="Services" src="../images/service.PNG" /></li>
+<li>Configure cluster name
+    <img alt="Cluster Name" src="../images/cluster_name.PNG" /></li>
+<li>Review the task definition, Service and cluster details and click next
+    <img alt="Review" src="../images/review.PNG" /></li>
+<li>Click on create and wait for the status to complete
+    <img alt="Services Up and running" src="../images/update.PNG" /></li>
+<li>Gather IP information from clusters -&gt; tasks and open nginx in browser
+    <img alt="Nginx up and running" src="../images/nginx1.PNG" /> </li>
+</ol>
 
 
 
