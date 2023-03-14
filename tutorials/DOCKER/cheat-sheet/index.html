@@ -9,15 +9,17 @@
       
       
       
-        <link rel="prev" href="../../DOCKER/cheat-sheet/">
+        <link rel="prev" href="../../AWS/ec2/ec2_docker/">
       
+      
+        <link rel="next" href="../../mkdocs-material/setup/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.2">
     
     
       
-        <title>Setup - Manohar Endla</title>
+        <title>Docker Cheat sheet - Manohar Endla</title>
       
     
     
@@ -69,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#steps-to-setup-the-environment" class="md-skip">
+        <a href="#docker-cheat-sheet" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Setup
+              Docker Cheat sheet
             
           </span>
         </div>
@@ -441,16 +443,18 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
       
       
       
@@ -459,7 +463,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
           DOCKER
@@ -470,11 +474,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../DOCKER/cheat-sheet/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Docker Cheat sheet
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Docker Cheat sheet
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-docker-commands" class="md-nav__link">
+    Basic docker commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basics-of-dockerfile" class="md-nav__link">
+    Basics of Dockerfile
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -491,18 +543,16 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
       
       
       
@@ -511,7 +561,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_2_3">
           <span class="md-nav__icon md-icon"></span>
           Mkdocs material
@@ -522,48 +572,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Setup
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../mkdocs-material/setup/" class="md-nav__link">
         Setup
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#steps-to-setup-the-environment" class="md-nav__link">
-    Steps to setup the environment
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -597,29 +610,151 @@
                   
 
 
-  <h1>Setup</h1>
-
-<h2 id="steps-to-setup-the-environment">Steps to setup the environment</h2>
-<div class="highlight"><span class="filename">CLI commands</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Create a new virtuale env</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Actiavte the virtual env</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>.<span class="se">\v</span>env<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Install the mkdocs material library</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># Create a new site</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>mkdocs<span class="w"> </span>new<span class="w"> </span>.
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c1"># Publish the site</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>mksdocs<span class="w"> </span>serve
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="c1">#Update the theme to mkdocs from default in mkdocs.yml</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="c1"># Does a github push to remote repository</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>mkdocs<span class="w"> </span>gh-deploy
-</code></pre></div>
+<h1 id="docker-cheat-sheet">Docker Cheat sheet</h1>
+<h2 id="basic-docker-commands">Basic docker commands</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+<th>Example Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>docker container ls -a  (or) docker ps -a</td>
+<td>lists all containers both started and stopped</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker run -it --name <code>docker-container-name</code> -p 8080:80 nginx</td>
+<td>Starts the nginx container in interactive terminal mode</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker run -dt --name <code>docker-container-name</code> nginx</td>
+<td>Runs the container in daemon mode</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker images or docker image ls</td>
+<td>lists local docker images</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker image rm <code>image-name</code></td>
+<td>removes the image</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker image prune -a</td>
+<td>removes images not associated with any containers</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker image inspect <code>image-name</code></td>
+<td>Inspects the image</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker pull <code>image-name</code></td>
+<td>Pulls a docker image from the docker registry</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker rm <code>container-id</code></td>
+<td>Removes container in stopped state</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker start <code>container-name</code></td>
+<td>starts the container in stopped state</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker stop <code>container-name</code></td>
+<td>stops the container</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker restart <code>container-name</code></td>
+<td>restarts the container</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker exec -it <code>container-name</code> /bin/bash</td>
+<td>ssh into a running contianer started in daemon mode</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker cp <code>container-name</code>:<code>file-path</code> <code>local-destination-path</code></td>
+<td>copies the file from container to local and can be vice versa</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker container prune</td>
+<td>Removes all exited containers</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker rename <code>old-name</code> <code>new-name</code></td>
+<td>renames the container</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker stats <code>container-name</code></td>
+<td>Outputs the mem info of the container. Similar to top</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker inspect <code>container-name</code></td>
+<td>Gives the complete details of the container, like IP, volumes etc</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker commit <code>container-name</code> <code>new-name</code></td>
+<td>Saves the running container as an image with new -name</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker build . -t <code>image-name</code></td>
+<td>Creates an image with docker file and tags it with <code>image-name</code></td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker login --username=<code>user</code></td>
+<td>logon to docker hub</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker tag <code>local-image</code> <code>user</code>/<code>repo</code>:<code>version</code></td>
+<td>Tag a local image</td>
+<td>docker tag appimage mano/web:latest</td>
+</tr>
+<tr>
+<td>docker push <code>image-name</code></td>
+<td>push the image to repository</td>
+<td>docker push mano/web:latest</td>
+</tr>
+<tr>
+<td>docker volume create <code>volume-name</code></td>
+<td>Create a new volume on host machine</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker volume inspect <code>volume-name</code></td>
+<td>view details about the volume</td>
+<td>NA</td>
+</tr>
+<tr>
+<td>docker network create <code>network-name</code></td>
+<td>Creates a new network</td>
+<td>NA</td>
+</tr>
+</tbody>
+</table>
+<h2 id="basics-of-dockerfile">Basics of Dockerfile</h2>
+<p>// TODO</p>
 
 
 
